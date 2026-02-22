@@ -9,6 +9,7 @@ Original file is located at
 
 import streamlit as st
 import joblib
+import pandas as pd
 model=joblib.load("dtc_model.pkl")
 st.title("wine type prediction !")
 fixed_acidity=st.number_input("fixed_acidity")
